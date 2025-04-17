@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+from pathlib import Path
+
+# HTML mejorado para W02 - con aside, mejoras CSS, validación y metadatos completos
+html_w02 = """<!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
@@ -33,3 +36,62 @@
   </footer>
 </body>
 </html>
+"""
+
+# CSS para cumplir toda la rúbrica W02
+css_w02 = """nav {
+  background-color: darkblue;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+h1 {
+  color: darkblue;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+aside {
+  width: 250px;
+  margin: 10px;
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+p {
+  padding: 0;
+}
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+"""
+
+# Guardar archivos
+html_file = Path("/mnt/data/index.html")
+css_file = Path("/mnt/data/styles.css")
+
+html_file.write_text(html_w02)
+css_file.write_text(css_w02)
+
+html_file.name, css_file.name
