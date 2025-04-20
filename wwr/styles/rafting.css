@@ -1,12 +1,21 @@
-/* ENCUEADRAMIENTO GENERAL */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* SECCIÓN HERO CON IMAGEN DE FONDO Y TEXTO CENTRADO */
-.hero {
+:root {
+    --primary-color: #264969;
+    --accent-color: #c4ad7f;
+    --light-gray: #f5f5f5;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ENCUEADRAMIENTO GENERAL */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* SECCIÓN HERO CON IMAGEN DE FONDO Y TEXTO CENTRADO */
+  .hero {
     position: relative;
     text-align: center;
   }
@@ -15,6 +24,7 @@ main {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    border-radius: 10px;
   }
   
   .overlay-text {
@@ -24,67 +34,103 @@ main {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 1rem 2rem;
-    border-radius: 8px;
+    padding: 1.5rem 2.5rem;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
   
-
-/* SECCIÓN DE SERVICIOS ORGANIZADA EN FILA */
-.services {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.card {
-  flex: 1 1 250px;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* NEWSLETTER */
-.cta {
-  background-color: #e0e0e0;
-  padding: 2rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.cta form {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.cta input[type="email"] {
-  padding: 0.5rem;
-  width: 300px;
-  max-width: 80%;
-}
-
-.cta button {
-  padding: 0.5rem 1rem;
-  background: #264969;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-/* FOOTER */
-footer {
-  background: #264969;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-}
+  /* SECCIÓN DE SERVICIOS ORGANIZADA EN FILA */
+  .services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px var(--shadow);
+    border-radius: 10px;
+    flex: 1 1 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* NEWSLETTER */
+  .cta {
+    background-color: var(--light-gray);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--shadow);
+  }
+  
+  .cta h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  
+  .cta form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .cta input[type="email"] {
+    padding: 0.5rem;
+    width: 300px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cta button {
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .cta button:hover {
+    background: #1e3b5e;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 4rem;
+    font-size: 0.95rem;
+    border-top: 5px solid var(--accent-color);
+  }
+  
+  footer .social {
+    margin-top: 1rem;
+  }
+  
+  footer .social img {
+    width: 24px;
+    margin: 0 0.5rem;
+  }
+  
