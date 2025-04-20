@@ -13,18 +13,21 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
+
 
 /* Layout container */
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
+
 
 /* HEADER */
 header {
@@ -95,12 +98,12 @@ nav ul li a:hover {
 
 /* SERVICES SECTION */
 .services {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
+
 
 .card {
   flex: 1 1 280px;
@@ -197,4 +200,26 @@ footer .social img {
   margin: 0 0.5rem;
   height: 24px;
   vertical-align: middle;
+}
+.card p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+.highlight-section {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 1rem 2rem;
+}
+
+.highlight-section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.highlight-section p {
+  font-size: 1.1rem;
+  color: #555;
 }
