@@ -17,30 +17,36 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <section>
+    <section class="contact-form">
       <h2>Send Us a Message</h2>
       <form>
         <label for="name">Name:</label>
         <input id="name" name="name" type="text" required />
+
         <label for="email">Email:</label>
         <input id="email" name="email" type="email" required />
+
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Submit</button>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
       </form>
     </section>
-    <section>
+
+    <section class="contact-details">
       <h2>Contact Details</h2>
       <p>Email: contact@juicerafting.com</p>
       <p>Phone: +51 123 456 789</p>
       <p>Location: Cusco, Peru</p>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Juice Rafting</p>
     <div class="social">
@@ -51,3 +57,4 @@
   </footer>
 </body>
 </html>
+
