@@ -1,0 +1,23 @@
+
+.newsletter {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color, #264969);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
