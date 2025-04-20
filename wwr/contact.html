@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-<meta charset='UTF-8'>
-<title>Contact Us | Juice Rafting</title>
-<link rel='stylesheet' href='styles/rafting.css'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Juice Rafting for bookings and questions." />
+  <meta name="author" content="Omar Meza" />
+  <title>Contact Us | Juice Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
-<header><h1>Contact Us</h1></header>
-<main><form><input type='text' placeholder='Your Name'><input type='email' placeholder='Your Email'><button type='submit'>Submit</button></form></main>
-<footer><p>Reach us anytime.</p></footer>
+  <header>
+    <img src="images/wwr-logo.webp" alt="Juice Rafting Logo" width="80" />
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section>
+      <h2>Contact Details</h2>
+      <p>Email: contact@juicerafting.com</p>
+      <p>Phone: +51 123 456 789</p>
+      <p>Location: Cusco, Peru</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Juice Rafting</p>
+    <div class="social">
+      <img src="images/facebook.svg" alt="Facebook" width="24" />
+      <img src="images/instagram.svg" alt="Instagram" width="24" />
+      <img src="images/twitter.svg" alt="Twitter" width="24" />
+    </div>
+  </footer>
 </body>
 </html>
